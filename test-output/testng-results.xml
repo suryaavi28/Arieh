@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="13" passed="10" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-15T08:40:26 IST" name="Default suite" finished-at="2024-10-15T08:40:59 IST" duration-ms="33574">
+  <suite started-at="2024-11-11T16:29:07 IST" name="Suite" finished-at="2024-11-11T16:31:24 IST" duration-ms="136898">
     <groups>
     </groups>
-    <test started-at="2024-10-15T08:40:26 IST" name="Default test" finished-at="2024-10-15T08:40:59 IST" duration-ms="33574">
-      <class name="com.arieh.tests.Arieh_UAT_AddDispatchPageTest">
-        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@2cf3d63b]" started-at="2024-10-15T08:40:26 IST" name="preBase" finished-at="2024-10-15T08:40:48 IST" duration-ms="22646" status="PASS">
+    <test started-at="2024-11-11T16:29:07 IST" name="Test" finished-at="2024-11-11T16:31:24 IST" duration-ms="136898">
+      <class name="com.arieh.tests.Arieh_UAT_DispatchPageTest">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_DispatchPageTest@24ba9639]" started-at="2024-11-11T16:29:07 IST" name="preBase" finished-at="2024-11-11T16:29:19 IST" duration-ms="11401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preBase -->
-        <test-method signature="testWithAddDispatch()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@2cf3d63b]" started-at="2024-10-15T08:40:48 IST" name="testWithAddDispatch" finished-at="2024-10-15T08:40:59 IST" duration-ms="10046" status="FAIL">
+        <test-method signature="TestWithAddStockMultiple()[pri:0, instance:com.arieh.tests.Arieh_UAT_DispatchPageTest@24ba9639]" started-at="2024-11-11T16:29:19 IST" name="TestWithAddStockMultiple" finished-at="2024-11-11T16:29:29 IST" duration-ms="10340" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //input[@id='txt_invoice'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: dd_supplierName (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54080/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 596f2c739626062244e0eb929a66d231]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57983/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15a956cb9b8c3d9bd82a8e65b8ef444e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@id='txt_invoice'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: dd_supplierName (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54080/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 596f2c739626062244e0eb929a66d231
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57983/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15a956cb9b8c3d9bd82a8e65b8ef444e
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 at com.utils.WaitUtilities.elementToBeClickable(WaitUtilities.java:17)
-at com.pages.Arieh_UAT_AddDispatchPage.enterInvoiceNumber(Arieh_UAT_AddDispatchPage.java:56)
-at com.pages.Arieh_UAT_AddDispatchPage.clickOnTheAddDispatch(Arieh_UAT_AddDispatchPage.java:88)
-at com.arieh.tests.Arieh_UAT_AddDispatchPageTest.testWithAddDispatch(Arieh_UAT_AddDispatchPageTest.java:32)
+at com.pages.Arieh_UAT_AddStockPage.selectSupplierOne(Arieh_UAT_AddStockPage.java:58)
+at com.pages.Arieh_UAT_AddStockPage.AddStockAndSubmitOne(Arieh_UAT_AddStockPage.java:156)
+at com.pages.Arieh_UAT_DispatchPage.clickOnAddStockOnSamePage(Arieh_UAT_DispatchPage.java:45)
+at com.arieh.tests.Arieh_UAT_DispatchPageTest.TestWithAddStockMultiple(Arieh_UAT_DispatchPageTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,12 +68,264 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- TestWithAddStockMultiple -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_DispatchPageTest@24ba9639]" started-at="2024-11-11T16:29:29 IST" name="tearDownTest" finished-at="2024-11-11T16:29:29 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.arieh.tests.Arieh_UAT_DispatchPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_AddDispatchPageTest">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@6155d082]" started-at="2024-11-11T16:29:56 IST" name="preBase" finished-at="2024-11-11T16:30:05 IST" duration-ms="8991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testWithAddDispatch()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@6155d082]" started-at="2024-11-11T16:30:05 IST" name="testWithAddDispatch" finished-at="2024-11-11T16:30:15 IST" duration-ms="9173" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- testWithAddDispatch -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@2cf3d63b]" started-at="2024-10-15T08:40:59 IST" name="tearDownTest" finished-at="2024-10-15T08:40:59 IST" duration-ms="843" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@6155d082]" started-at="2024-11-11T16:30:15 IST" name="tearDownTest" finished-at="2024-11-11T16:30:16 IST" duration-ms="1010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@6155d082]" started-at="2024-11-11T16:30:16 IST" name="preBase" finished-at="2024-11-11T16:30:26 IST" duration-ms="10248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testWithAddDispatch()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@6155d082]" started-at="2024-11-11T16:30:26 IST" name="testWithAddDispatch" finished-at="2024-11-11T16:30:36 IST" duration-ms="10045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithAddDispatch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddDispatchPageTest@6155d082]" started-at="2024-11-11T16:30:36 IST" name="tearDownTest" finished-at="2024-11-11T16:30:37 IST" duration-ms="1060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- com.arieh.tests.Arieh_UAT_AddDispatchPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.arieh.tests.Arieh_UAT_AddStockPageTest">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@47f9738]" started-at="2024-11-11T16:29:29 IST" name="preBase" finished-at="2024-11-11T16:29:41 IST" duration-ms="11611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testBalanceForNewStock()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@47f9738]" started-at="2024-11-11T16:29:41 IST" name="testBalanceForNewStock" finished-at="2024-11-11T16:29:44 IST" duration-ms="2804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBalanceForNewStock -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@47f9738]" started-at="2024-11-11T16:29:44 IST" name="tearDownTest" finished-at="2024-11-11T16:29:44 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@47f9738]" started-at="2024-11-11T16:29:44 IST" name="preBase" finished-at="2024-11-11T16:29:53 IST" duration-ms="8975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testOpeninForNewStock()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@47f9738]" started-at="2024-11-11T16:29:53 IST" name="testOpeninForNewStock" finished-at="2024-11-11T16:29:55 IST" duration-ms="2426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpeninForNewStock -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@47f9738]" started-at="2024-11-11T16:29:55 IST" name="tearDownTest" finished-at="2024-11-11T16:29:56 IST" duration-ms="972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.arieh.tests.Arieh_UAT_AddStockPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_LoginPageTest">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:37 IST" name="preBase" finished-at="2024-11-11T16:30:41 IST" duration-ms="4026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testEmptyCredentials()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:41 IST" name="testEmptyCredentials" finished-at="2024-11-11T16:30:41 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCredentials -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:41 IST" name="tearDownTest" finished-at="2024-11-11T16:30:41 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:41 IST" name="preBase" finished-at="2024-11-11T16:30:44 IST" duration-ms="2689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testEmptyPassword()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:44 IST" name="testEmptyPassword" finished-at="2024-11-11T16:30:44 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyPassword -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:44 IST" name="tearDownTest" finished-at="2024-11-11T16:30:45 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:45 IST" name="preBase" finished-at="2024-11-11T16:30:47 IST" duration-ms="2490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testEmptyUsername()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:47 IST" name="testEmptyUsername" finished-at="2024-11-11T16:30:47 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyUsername -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:47 IST" name="tearDownTest" finished-at="2024-11-11T16:30:48 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:48 IST" name="preBase" finished-at="2024-11-11T16:30:50 IST" duration-ms="2677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testInvalidCredentials()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:50 IST" name="testInvalidCredentials" finished-at="2024-11-11T16:30:51 IST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidCredentials -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:51 IST" name="tearDownTest" finished-at="2024-11-11T16:30:51 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:51 IST" name="preBase" finished-at="2024-11-11T16:30:54 IST" duration-ms="2565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testSpecialCharactersInCredentials()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:30:54 IST" name="testSpecialCharactersInCredentials" finished-at="2024-11-11T16:31:04 IST" duration-ms="10503" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to no longer be visible: By.id: Home (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58280/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 653b0135d76a797380ca2af160250c4b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: Home (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58280/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 653b0135d76a797380ca2af160250c4b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.utils.WaitUtilities.waitForInvisibility(WaitUtilities.java:37)
+at com.arieh.tests.Arieh_UAT_LoginPageTest.testSpecialCharactersInCredentials(Arieh_UAT_LoginPageTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSpecialCharactersInCredentials -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:04 IST" name="tearDownTest" finished-at="2024-11-11T16:31:04 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:04 IST" name="preBase" finished-at="2024-11-11T16:31:07 IST" duration-ms="2750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testValidCredentials()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:07 IST" name="testValidCredentials" finished-at="2024-11-11T16:31:18 IST" duration-ms="10608" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to no longer be visible: By.id: Home (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58314}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58314/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd12fd1dc7cc94d47e840a032e64ee15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: Home (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58314}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58314/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd12fd1dc7cc94d47e840a032e64ee15
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.utils.WaitUtilities.waitForInvisibility(WaitUtilities.java:37)
+at com.arieh.tests.Arieh_UAT_LoginPageTest.testValidCredentials(Arieh_UAT_LoginPageTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidCredentials -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:18 IST" name="tearDownTest" finished-at="2024-11-11T16:31:18 IST" duration-ms="764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:18 IST" name="preBase" finished-at="2024-11-11T16:31:21 IST" duration-ms="2643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testWithCopyrightName()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:21 IST" name="testWithCopyrightName" finished-at="2024-11-11T16:31:21 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithCopyrightName -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:21 IST" name="tearDownTest" finished-at="2024-11-11T16:31:21 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:21 IST" name="preBase" finished-at="2024-11-11T16:31:24 IST" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testWithEmailClick()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:24 IST" name="testWithEmailClick" finished-at="2024-11-11T16:31:24 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithEmailClick -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_LoginPageTest@2dcd168a]" started-at="2024-11-11T16:31:24 IST" name="tearDownTest" finished-at="2024-11-11T16:31:24 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.arieh.tests.Arieh_UAT_LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

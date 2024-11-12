@@ -61,6 +61,11 @@ private By adddispatch=By.xpath("//span[contains(text(),'Add Dispatch')]");
 		return new Arieh_UAT_AddDispatchPage(driver);
 	}
 	
+	public Arieh_UAT_MultipleAddStockPage clickOnTheAddStocks() {
+		
+		return new Arieh_UAT_MultipleAddStockPage(driver);
+	}
+	
 	
 	
 	

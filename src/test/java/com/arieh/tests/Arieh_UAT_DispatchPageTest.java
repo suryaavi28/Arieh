@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.arieh.base.TestBase_Arieh;
+import com.pages.Arieh_UAT_AddDispatchPage;
 import com.pages.Arieh_UAT_AddStockPage;
 import com.pages.Arieh_UAT_DashboardPage;
 import com.pages.Arieh_UAT_DispatchPage;
@@ -16,6 +17,7 @@ public class Arieh_UAT_DispatchPageTest extends TestBase_Arieh {
 	Arieh_UAT_AddStockPage ariehuataddstockpage;
 	Arieh_UAT_DispatchPage ariehuatdispatchpage;
 	Arieh_UAT_DashboardPage ariehuatdashboardpage;
+	Arieh_UAT_AddDispatchPage ariehuatadddispatchpage;
 	
 	@BeforeMethod
 	public void preBase () {
@@ -23,6 +25,8 @@ public class Arieh_UAT_DispatchPageTest extends TestBase_Arieh {
 		ariehuatloginpage = new Arieh_UAT_LoginPage(driver);
 		ariehuatdashboardpage = ariehuatloginpage.validCrdentials();
 		ariehuatdispatchpage = ariehuatdashboardpage.clickOnDispatch();
+		
+		
 		
 		
 	}

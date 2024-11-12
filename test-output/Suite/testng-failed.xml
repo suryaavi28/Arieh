@@ -7,8 +7,17 @@
         <methods>
           <include name="testValidCredentials"/>
           <include name="preBase"/>
+          <include name="tearDownTest"/>
+          <include name="testSpecialCharactersInCredentials"/>
         </methods>
       </class> <!-- com.arieh.tests.Arieh_UAT_LoginPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_DispatchPageTest">
+        <methods>
+          <include name="preBase"/>
+          <include name="tearDownTest"/>
+          <include name="TestWithAddStockMultiple"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_DispatchPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

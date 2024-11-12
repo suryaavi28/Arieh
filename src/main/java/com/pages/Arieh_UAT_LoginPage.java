@@ -25,6 +25,7 @@ public class Arieh_UAT_LoginPage {
 	private By username = By.id("username");
 	private By password = By.id("password");
 	private By submitbtn = By.xpath("//button[@type='submit']");
+	public By mail = By.xpath("//div[@class='help-email']");
 	
 	
 	
@@ -42,6 +43,12 @@ public class Arieh_UAT_LoginPage {
 	public void clickSubmit() {
 		WebElement submitclk = waitUtils.elementToBeClickable(driver, submitbtn, 10);
 		submitclk.click();;
+	
+	}
+	
+	public boolean verifyEmailClick() {
+		WebElement emailenabled = waitUtils.waitForVisibility(driver, mail, 10);
+	return emailenabled.isEnabled();
 	
 	}
 	

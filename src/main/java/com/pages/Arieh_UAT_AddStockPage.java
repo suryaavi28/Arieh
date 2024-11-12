@@ -32,6 +32,10 @@ public class Arieh_UAT_AddStockPage {
 	private By submit=By.xpath("//button[@class='button-submit'][text()='Submit'][@xpath='4']");
 	private By clicksupplier=By.id("dd_supplierName");
 	private By clickonly = By.id("myModalLabel2");
+	private By uploadstock=By.id("bt_upload");
+	private By draganddrop=By.xpath("//div[@class='container upload-block']");
+	
+	
 	
 	public Arieh_UAT_AddStockPage(WebDriver driver){
 		this.driver=driver;
@@ -40,10 +44,15 @@ public class Arieh_UAT_AddStockPage {
 		configUtils.readCOnfig();
 	}
 	
-//	public void clickOnAddStock() {
-//		WebElement add = waitUtils.elementToBeClickable(driver, addstock, 10);
-//		add.click();
-//	}
+
+	
+	public void clickOnAddStockagain() {
+		WebElement add = waitUtils.elementToBeClickable(driver, addstock, 10);  // Wait for the element to be clickable
+        
+        // Use JavascriptExecutor to click the element
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", add);
+	}
 	
 	public void selectSupplierOne() {
 		WebElement clicksupp=waitUtils.elementToBeClickable(driver, clicksupplier, 10);
@@ -143,7 +152,7 @@ public void selectDate() {
 	}
 	
 	public void AddStockAndSubmitOne() {
-		clickOnAddStock();
+//		clickOnAddStock();
 		selectSupplierOne();
 		selectDate();
 		enterReceivedQuantity();
@@ -151,32 +160,39 @@ public void selectDate() {
 		//clickOnSubmit();
 		
 	}
-	private void clickOnAddStock() {
-		WebElement add = waitUtils.elementToBeClickable(driver, addstock, 10);
-		add.click();// TODO Auto-generated method stub
-		
-	}
+	public void clickOnAddStock1() {
+	   
+	            WebElement add = waitUtils.waitForVisibility(driver, addstock, 10);
+	            add.click();  // Attempt to click the element
+	             // If click is successful, set isClicked to true to exit loop
+	      
+	    }
 
-	public void AddStockAndSubmitTwo() {
-		//clickOnAddStock();
+	  
+
+
+
+	public Arieh_UAT_DispatchPage AddStockAndSubmitTwo() {
+		clickOnAddStock1();
 		selectSupplierTwo();
 		selectDate();
 		enterReceivedQuantity();
+		return new Arieh_UAT_DispatchPage(driver);
 		//clickOnSubmit();
 		
 	}
 	public void AddStockAndSubmitThree() {
-//		clickOnAddStock();
-		selectSupplierTwo();
+		clickOnAddStock1();
+		selectSupplierThree();
 		selectDate();
 		enterReceivedQuantity();
 		//clickOnSubmit();
 		
 	}
 	public void AddStockAndSubmitFour()  {
-//		Thread.sleep(2000);
-//		clickOnAddStock();
-		selectSupplierTwo();
+	
+		clickOnAddStock1();
+		selectSupplierFOUR();
 		selectDate();
 		enterReceivedQuantity();
 	//	clickOnSubmit();
