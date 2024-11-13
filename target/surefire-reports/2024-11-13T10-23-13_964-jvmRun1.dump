@@ -1,7 +1,7 @@
-# Created at 2024-11-12T10:57:30.123
+# Created at 2024-11-13T10:23:44.849
 Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
-Thread dump before exiting the process (9892@DESKTOP-M2RHSKU):
-"Forwarding get on session 63bcd15009f6ef94d7a2f435da7b02d6 to remote" 
+Thread dump before exiting the process (15188@DESKTOP-M2RHSKU):
+"Forwarding clickElement on session 7b3dfcfc207c62ce2e9cb52dfdee4181 to remote" 
    java.lang.Thread.State: TIMED_WAITING
         at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@21/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
@@ -12,52 +12,50 @@ Thread dump before exiting the process (9892@DESKTOP-M2RHSKU):
         at java.base@21/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
         at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
         at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-        at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda/0x0000025e81306828.execute(Unknown Source)
+        at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda/0x000001c58126f8d0.execute(Unknown Source)
         at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-        at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda/0x0000025e81337bb0.execute(Unknown Source)
+        at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda/0x000001c58129dc20.execute(Unknown Source)
         at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-        at app//org.openqa.selenium.remote.http.Filter$$Lambda/0x0000025e81306a58.execute(Unknown Source)
+        at app//org.openqa.selenium.remote.http.Filter$$Lambda/0x000001c58126fb00.execute(Unknown Source)
         at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
         at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
         at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
         at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
         at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
         at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-        at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-        at app//com.arieh.base.TestBase_Arieh.setUp(TestBase_Arieh.java:50)
-        at app//com.arieh.tests.Arieh_UAT_AddStockPageTest.preBase(Arieh_UAT_AddStockPageTest.java:29)
-        at java.base@21/java.lang.invoke.LambdaForm$DMH/0x0000025e81174400.invokeVirtual(LambdaForm$DMH)
-        at java.base@21/java.lang.invoke.LambdaForm$MH/0x0000025e81174c00.invoke(LambdaForm$MH)
+        at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+        at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+        at app//com.pages.Arieh_UAT_AddStockPage.clickOnAddStock1(Arieh_UAT_AddStockPage.java:180)
+        at app//com.pages.Arieh_UAT_AddStockPage.AddStockAndSubmitTwo(Arieh_UAT_AddStockPage.java:194)
+        at app//com.arieh.tests.Arieh_UAT_AddStockPageTest.testAddStock2(Arieh_UAT_AddStockPageTest.java:133)
+        at java.base@21/java.lang.invoke.LambdaForm$DMH/0x000001c58114c400.invokeVirtual(LambdaForm$DMH)
+        at java.base@21/java.lang.invoke.LambdaForm$MH/0x000001c58114d000.invoke(LambdaForm$MH)
         at java.base@21/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
         at java.base@21/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
         at java.base@21/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
         at java.base@21/java.lang.reflect.Method.invoke(Method.java:580)
-        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-        at app//org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-        at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-        at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-        at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-        at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-        at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-        at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-        at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-        at app//org.testng.TestRunner$$Lambda/0x0000025e81168760.accept(Unknown Source)
+        at app//org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+        at app//org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+        at app//org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+        at app//org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+        at app//org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+        at app//org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+        at app//org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+        at app//org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+        at app//org.testng.TestRunner$$Lambda/0x000001c581140de8.accept(Unknown Source)
         at java.base@21/java.util.ArrayList.forEach(ArrayList.java:1596)
-        at app//org.testng.TestRunner.privateRun(TestRunner.java:739)
-        at app//org.testng.TestRunner.run(TestRunner.java:614)
-        at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-        at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-        at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-        at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
-        at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-        at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-        at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-        at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-        at app//org.testng.TestNG.runSuites(TestNG.java:1112)
-        at app//org.testng.TestNG.run(TestNG.java:1079)
+        at app//org.testng.TestRunner.privateRun(TestRunner.java:794)
+        at app//org.testng.TestRunner.run(TestRunner.java:596)
+        at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+        at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+        at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+        at app//org.testng.SuiteRunner.run(SuiteRunner.java:276)
+        at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+        at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+        at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+        at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+        at app//org.testng.TestNG.runSuites(TestNG.java:1063)
+        at app//org.testng.TestNG.run(TestNG.java:1031)
         at app//org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
         at app//org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
         at app//org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
@@ -112,8 +110,7 @@ Thread dump before exiting the process (9892@DESKTOP-M2RHSKU):
         at app//org.apache.maven.surefire.booter.ForkedBooter.access$400(ForkedBooter.java:82)
         at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:340)
         at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:423)
-        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:435)
-        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:388)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:364)
         at java.base@21/java.lang.Thread.runWith(Thread.java:1596)
         at java.base@21/java.lang.Thread.run(Thread.java:1583)
 
@@ -141,14 +138,6 @@ Thread dump before exiting the process (9892@DESKTOP-M2RHSKU):
         at java.base@21/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
         at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
 
-"ForkJoinPool.commonPool-worker-5" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@21/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
-        at java.base@21/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
-        at java.base@21/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
-        at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
-
 "ForkJoinPool.commonPool-worker-6" 
    java.lang.Thread.State: WAITING
         at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
@@ -158,6 +147,14 @@ Thread dump before exiting the process (9892@DESKTOP-M2RHSKU):
         at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
 
 "ForkJoinPool.commonPool-worker-4" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@21/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
+        at java.base@21/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
+        at java.base@21/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+"ForkJoinPool.commonPool-worker-5" 
    java.lang.Thread.State: WAITING
         at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@21/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
@@ -166,6 +163,30 @@ Thread dump before exiting the process (9892@DESKTOP-M2RHSKU):
         at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
 
 "ForkJoinPool.commonPool-worker-7" 
+   java.lang.Thread.State: WAITING
+        at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@21/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        at java.base@21/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        at java.base@21/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+"ForkJoinPool.commonPool-worker-9" 
+   java.lang.Thread.State: WAITING
+        at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@21/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        at java.base@21/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        at java.base@21/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+"ForkJoinPool.commonPool-worker-8" 
+   java.lang.Thread.State: WAITING
+        at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@21/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        at java.base@21/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+        at java.base@21/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+        at java.base@21/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+"ForkJoinPool.commonPool-worker-10" 
    java.lang.Thread.State: WAITING
         at java.base@21/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@21/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
@@ -302,7 +323,7 @@ Thread dump before exiting the process (9892@DESKTOP-M2RHSKU):
         at app//org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:179)
         at app//org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)
         at app//org.openqa.selenium.remote.service.DriverService.lambda$start$2(DriverService.java:218)
-        at app//org.openqa.selenium.remote.service.DriverService$$Lambda/0x0000025e81317858.get(Unknown Source)
+        at app//org.openqa.selenium.remote.service.DriverService$$Lambda/0x000001c58127a8c0.get(Unknown Source)
         at java.base@21/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
         at java.base@21/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
         at java.base@21/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)

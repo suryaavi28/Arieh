@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Arieh Test(failed)" verbose="0">
+    <classes>
+      <class name="com.arieh.tests.Arieh_UAT_AddStockPageTest">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="testAddStock2"/>
+          <include name="preBase"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_AddStockPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_LoginPageTest">
+        <methods>
+          <include name="testValidCredentials"/>
+          <include name="preBase"/>
+          <include name="tearDownTest"/>
+          <include name="testSpecialCharactersInCredentials"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_LoginPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_DispatchPageTest">
+        <methods>
+          <include name="preBase"/>
+          <include name="tearDownTest"/>
+          <include name="TestWithAddStockMultiple"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_DispatchPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_AddDispatchPageTest">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="testWithAddDispatch"/>
+          <include name="preBase"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_AddDispatchPageTest -->
+    </classes>
+  </test> <!-- Arieh Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

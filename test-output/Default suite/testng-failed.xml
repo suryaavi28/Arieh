@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.arieh.tests.Arieh_UAT_AddStockPageTest">
+      <class name="com.arieh.tests.Arieh_UAT_ResidualPageTest">
         <methods>
           <include name="tearDownTest"/>
-          <include name="testBalanceForNewStock"/>
-          <include name="preBase"/>
+          <include name="testDeleteStockAndDispatch"/>
         </methods>
-      </class> <!-- com.arieh.tests.Arieh_UAT_AddStockPageTest -->
+      </class> <!-- com.arieh.tests.Arieh_UAT_ResidualPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

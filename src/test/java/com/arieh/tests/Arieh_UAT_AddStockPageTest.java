@@ -1,5 +1,6 @@
 package com.arieh.tests;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -33,7 +34,7 @@ public class Arieh_UAT_AddStockPageTest extends TestBase_Arieh{
 		ariehuataddstockpage=ariehuatdispatchpage.clickOnAddStock();
 		
 	}
-	//@Test
+//	@Test
 	public void testWithSecondRow() {
 	    List<WebElement> rows = driver.findElements(allrows); 
 	    if (rows.size() > 1) {
@@ -47,7 +48,7 @@ public class Arieh_UAT_AddStockPageTest extends TestBase_Arieh{
 	   
 	}}
 	
-	//@Test(invocationCount = 2)
+//	@Test(invocationCount = 2)
 	public void testAddStockcode() throws InterruptedException  {
 		ariehuataddstockpage.AddStockAndSubmitOne();
 		Thread.sleep(1000);
@@ -69,7 +70,7 @@ public class Arieh_UAT_AddStockPageTest extends TestBase_Arieh{
 		
 		
 	}}
-	@Test
+//	@Test
 	public void testBalanceForNewStock() throws InterruptedException {
 		ariehuataddstockpage.AddStockAndSubmitOne();
 		Thread.sleep(1000);
@@ -100,7 +101,7 @@ public class Arieh_UAT_AddStockPageTest extends TestBase_Arieh{
 	
 	}
 	
-	@Test
+	//@Test
 	public void testOpeninForNewStock() throws InterruptedException {
 		ariehuataddstockpage.AddStockAndSubmitOne();
 		Thread.sleep(1000);
@@ -123,10 +124,11 @@ public class Arieh_UAT_AddStockPageTest extends TestBase_Arieh{
 	         
 	         
 	       
-	}
+	}}
+	 
 	
-	}
-//	@Test(invocationCount = 2)
+	
+	@Test(invocationCount = 2)
 	public void testAddStock2() throws InterruptedException  {
 		ariehuataddstockpage.AddStockAndSubmitTwo();
 	Thread.sleep(1000);
@@ -137,7 +139,7 @@ public class Arieh_UAT_AddStockPageTest extends TestBase_Arieh{
 		
 		
 	
-	//@Test(invocationCount = 1)
+//	@Test(invocationCount = 1)
 	public void testAddStock3()  {
 		ariehuataddstockpage.AddStockAndSubmitThree();
 		

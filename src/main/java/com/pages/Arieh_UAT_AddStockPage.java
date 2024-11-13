@@ -1,5 +1,6 @@
 package com.pages;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -44,6 +45,17 @@ public class Arieh_UAT_AddStockPage {
 		configUtils.readCOnfig();
 	}
 	
+	public void verifyUploadStockClick() {
+		WebElement upload= waitUtils.waitForVisibility(driver, uploadstock, 10);
+		upload.click();
+	}
+	
+	public void verifyDragandDrop() throws IOException, Exception {
+		WebElement drag= waitUtils.waitForPresence(driver, draganddrop, 10);
+		String autiITScripts= "C:\\Users\\avisu\\eclipse-workspace\\arieh\\src\\test\\resources\\StockUpload.exe";
+		drag.click();
+		Runtime.getRuntime().exec(autiITScripts);
+	}
 
 	
 	public void clickOnAddStockagain() {
@@ -68,6 +80,8 @@ public class Arieh_UAT_AddStockPage {
 			}
 		}
 	}
+	
+	
 	public void selectSupplierTwo() {
 		WebElement clicksupp=waitUtils.elementToBeClickable(driver, clicksupplier, 10);
 		clicksupp.click();
@@ -168,7 +182,11 @@ public void selectDate() {
 	      
 	    }
 
-	  
+	  public void AddStockExcel() throws IOException, Exception {
+		  verifyUploadStockClick();
+		  verifyDragandDrop();
+		  
+	  }
 
 
 

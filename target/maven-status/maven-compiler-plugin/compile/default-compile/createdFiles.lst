@@ -1,10 +1,11 @@
 com\pages\Arieh_UAT_AddStockPage.class
 com\utils\WaitUtilities.class
+com\pages\Arieh_UAT_DashboardPage.class
+com\utils\ReadConfigUtilities.class
 com\arieh\base\TestBase_Arieh.class
 com\listeners\TestListener.class
-com\pages\Arieh_UAT_DashboardPage.class
 com\pages\Arieh_UAT_AddDispatchPage.class
 com\pages\Arieh_UAT_DispatchPage.class
-com\utils\ReadConfigUtilities.class
+com\pages\Arieh_UAT_ResidualPage.class
 com\pages\Arieh_UAT_LoginPage.class
 com\pages\Arieh_UAT_MultipleAddStockPage.class

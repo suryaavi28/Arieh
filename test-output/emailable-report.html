@@ -8,59 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">136,898</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,794</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.arieh.tests.Arieh_UAT_DispatchPageTest</td><td><a href="#m0">TestWithAddStockMultiple</a></td><td rowspan="1">1731322759213</td><td rowspan="1">10340</td></tr><tr class="failedodd"><td rowspan="2">com.arieh.tests.Arieh_UAT_LoginPageTest</td><td><a href="#m1">testSpecialCharactersInCredentials</a></td><td rowspan="1">1731322854056</td><td rowspan="1">10503</td></tr><tr class="failedodd"><td><a href="#m2">testValidCredentials</a></td><td rowspan="1">1731322867570</td><td rowspan="1">10608</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.arieh.tests.Arieh_UAT_AddDispatchPageTest</td><td><a href="#m3">testWithAddDispatch</a></td><td rowspan="2">1731322805868</td><td rowspan="2">9173</td></tr><tr class="passedeven"><td><a href="#m4">testWithAddDispatch</a></td></tr><tr class="passedodd"><td rowspan="2">com.arieh.tests.Arieh_UAT_AddStockPageTest</td><td><a href="#m5">testBalanceForNewStock</a></td><td rowspan="1">1731322781442</td><td rowspan="1">2804</td></tr><tr class="passedodd"><td><a href="#m6">testOpeninForNewStock</a></td><td rowspan="1">1731322793478</td><td rowspan="1">2426</td></tr><tr class="passedeven"><td rowspan="6">com.arieh.tests.Arieh_UAT_LoginPageTest</td><td><a href="#m7">testEmptyCredentials</a></td><td rowspan="1">1731322841447</td><td rowspan="1">229</td></tr><tr class="passedeven"><td><a href="#m8">testEmptyPassword</a></td><td rowspan="1">1731322844626</td><td rowspan="1">272</td></tr><tr class="passedeven"><td><a href="#m9">testEmptyUsername</a></td><td rowspan="1">1731322847620</td><td rowspan="1">265</td></tr><tr class="passedeven"><td><a href="#m10">testInvalidCredentials</a></td><td rowspan="1">1731322850782</td><td rowspan="1">497</td></tr><tr class="passedeven"><td><a href="#m11">testWithCopyrightName</a></td><td rowspan="1">1731322881603</td><td rowspan="1">27</td></tr><tr class="passedeven"><td><a href="#m12">testWithEmailClick</a></td><td rowspan="1">1731322884298</td><td rowspan="1">34</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.arieh.tests.Arieh_UAT_ResidualPageTest</td><td><a href="#m0">testWithOtpRetireve</a></td><td rowspan="1">1731475984511</td><td rowspan="1">1718</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.arieh.tests.Arieh_UAT_DispatchPageTest#TestWithAddStockMultiple</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: dd_supplierName (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57983/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 15a956cb9b8c3d9bd82a8e65b8ef444e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.utils.WaitUtilities.elementToBeClickable(WaitUtilities.java:17)
-	at com.pages.Arieh_UAT_AddStockPage.selectSupplierOne(Arieh_UAT_AddStockPage.java:58)
-	at com.pages.Arieh_UAT_AddStockPage.AddStockAndSubmitOne(Arieh_UAT_AddStockPage.java:156)
-	at com.pages.Arieh_UAT_DispatchPage.clickOnAddStockOnSamePage(Arieh_UAT_DispatchPage.java:45)
-	at com.arieh.tests.Arieh_UAT_DispatchPageTest.TestWithAddStockMultiple(Arieh_UAT_DispatchPageTest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.arieh.tests.Arieh_UAT_LoginPageTest#testSpecialCharactersInCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: Home (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58280/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 653b0135d76a797380ca2af160250c4b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.utils.WaitUtilities.waitForInvisibility(WaitUtilities.java:37)
-	at com.arieh.tests.Arieh_UAT_LoginPageTest.testSpecialCharactersInCredentials(Arieh_UAT_LoginPageTest.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.arieh.tests.Arieh_UAT_LoginPageTest#testValidCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.id: Home (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58314}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58314/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cd12fd1dc7cc94d47e840a032e64ee15
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.utils.WaitUtilities.waitForInvisibility(WaitUtilities.java:37)
-	at com.arieh.tests.Arieh_UAT_LoginPageTest.testValidCredentials(Arieh_UAT_LoginPageTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.arieh.tests.Arieh_UAT_AddDispatchPageTest#testWithAddDispatch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.arieh.tests.Arieh_UAT_AddDispatchPageTest#testWithAddDispatch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.arieh.tests.Arieh_UAT_AddStockPageTest#testBalanceForNewStock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.arieh.tests.Arieh_UAT_AddStockPageTest#testOpeninForNewStock</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.arieh.tests.Arieh_UAT_LoginPageTest#testEmptyCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.arieh.tests.Arieh_UAT_LoginPageTest#testEmptyPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.arieh.tests.Arieh_UAT_LoginPageTest#testEmptyUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.arieh.tests.Arieh_UAT_LoginPageTest#testInvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.arieh.tests.Arieh_UAT_LoginPageTest#testWithCopyrightName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.arieh.tests.Arieh_UAT_LoginPageTest#testWithEmailClick</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.arieh.tests.Arieh_UAT_ResidualPageTest#testWithOtpRetireve</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -51,6 +51,9 @@ public class TestBase_Arieh {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 	}
+	public static WebDriver getDriver() {
+        return driver;
+    }
 	  
     public void tearDown() {
         driver.quit();

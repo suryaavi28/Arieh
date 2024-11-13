@@ -78,7 +78,7 @@ public void testWithCopyrightName() {
 	Assert.assertEquals(expected, actualTrim);
 
 }
- 
+ @Test
  public void testWithLoginLabel() {
 	 String expected="Login to Arieh";
 	 String actual = driver.findElement(By.xpath("//label[contains(text(),'Login to Arieh')]")).getText();

@@ -1,5 +1,7 @@
 package com.arieh.tests;
 
+import java.io.IOException;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -35,7 +37,7 @@ public class Arieh_UAT_DispatchPageTest extends TestBase_Arieh {
 		ariehuatdispatchpage.clickOnAddStockOnSamePage();
 	}
 	
-	
+
 	
 	@AfterMethod
 	public void tearDownTest() throws InterruptedException {
