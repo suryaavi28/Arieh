@@ -13,7 +13,7 @@ public class Arieh_UAT_ResidualPageTest extends TestBase_Arieh {
 
    // @BeforeMethod
     public void setUpTest() throws MalformedURLException {
-        setUp();
+        //setUp();
         residualPage = new Arieh_UAT_ResidualPage(driver);
     }
 

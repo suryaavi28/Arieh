@@ -17,7 +17,7 @@
 		<maven.compiler.source>8</maven.compiler.source>
 		<maven.compiler.target>8</maven.compiler.target>
 		<aspectj.version>1.8.10</aspectj.version>
-		<allure.version>2.22.2</allure.version>
+		<allure.version>2.29.0</allure.version>
 	</properties>
 
 
@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.11.0</version>
+			<version>4.26.0</version>
 		</dependency>
 
 
@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.4.0</version>
+			<version>7.10.2</version>
 			
 		</dependency>
 
@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.5.2</version>
+			<version>5.9.2</version>
 		</dependency>
 
 

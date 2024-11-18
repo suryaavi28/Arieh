@@ -1,5 +1,6 @@
 package com.arieh.base;
 
+import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -8,6 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.BeforeSuite;
 
 import com.utils.ReadConfigUtilities;
 
@@ -17,7 +19,17 @@ public class TestBase_Arieh {
 
 	public static WebDriver driver;
 	 static ReadConfigUtilities configUtils;
-	
+	  @BeforeSuite
+	    public void cleanAllureResults() {
+	        File allureResultsFolder = new File("allure-results");
+	        if (allureResultsFolder.exists()) {
+	            for (File file : allureResultsFolder.listFiles()) {
+	                file.delete();
+	            }
+	            allureResultsFolder.delete();
+	        }
+	        System.out.println("Allure results folder cleaned.");
+	    }
 	public static void setUp() {
 		configUtils = new ReadConfigUtilities();
 		configUtils.readCOnfig();
