@@ -29,7 +29,7 @@ public class Arieh_UAT_SupplierAddDispatchPage {
 	}
 	
 	private By dispatch= By.xpath("//div[contains(text(),'Dispatch')]");
-	private By adddispatch=By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[1]/div[2]/app-dispatch[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[2]/span[1]");
+	private By adddispatch=By.xpath("//span[contains(text(),'Add Dispatch')]");
 	private By invoiceno=By.xpath("//input[@id='txt_invoice']");
 	private By materialcode=By.xpath("//div[@role='option']");
 	private By materialplace= By.id("dd_materialCode");

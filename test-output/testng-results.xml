@@ -1,21 +1,465 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="3" failed="3" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-18T11:01:34 IST" name="Default suite" finished-at="2024-11-18T11:01:36 IST" duration-ms="1910">
+  <suite started-at="2024-12-04T16:32:36 IST" name="Default suite" finished-at="2024-12-04T16:34:02 IST" duration-ms="85881">
     <groups>
     </groups>
-    <test started-at="2024-11-18T11:01:34 IST" name="Default test" finished-at="2024-11-18T11:01:36 IST" duration-ms="1910">
-      <class name="com.arieh.tests.Arieh_UAT_ResidualPageTest">
-        <test-method is-config="true" signature="cleanAllureResults()[pri:0, instance:com.arieh.tests.Arieh_UAT_ResidualPageTest@1c33c17b]" started-at="2024-11-18T11:01:34 IST" name="cleanAllureResults" finished-at="2024-11-18T11:01:34 IST" duration-ms="14" status="PASS">
+    <test started-at="2024-12-04T16:32:36 IST" name="Default test" finished-at="2024-12-04T16:34:02 IST" duration-ms="85881">
+      <class name="com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest">
+        <test-method is-config="true" signature="cleanAllureResults()[pri:0, instance:com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest@7331196b]" started-at="2024-12-04T16:32:36 IST" name="cleanAllureResults" finished-at="2024-12-04T16:32:36 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanAllureResults -->
-        <test-method signature="testWithOtpRetireve()[pri:0, instance:com.arieh.tests.Arieh_UAT_ResidualPageTest@1c33c17b]" started-at="2024-11-18T11:01:34 IST" name="testWithOtpRetireve" finished-at="2024-11-18T11:01:36 IST" duration-ms="1810" status="PASS">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest@7331196b]" started-at="2024-12-04T16:33:11 IST" name="preBase" finished-at="2024-12-04T16:33:29 IST" duration-ms="17237" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: otp (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: otp (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.utils.WaitUtilities.waitForPresence(WaitUtilities.java:42)
+at com.pages.Arieh_UAT_LoginPage.enterOtp(Arieh_UAT_LoginPage.java:97)
+at com.pages.Arieh_UAT_LoginPage.loginToSupplierDashBoard(Arieh_UAT_LoginPage.java:122)
+at com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest.preBase(Arieh_UAT_SupplierAddDispatchPageTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#otp"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c53da3d078ad61d43ab9e529ad3fcb05, findElement {using=id, value=otp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60722/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c53da3d078ad61d43ab9e529ad3fcb05
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWithOtpRetireve -->
-      </class> <!-- com.arieh.tests.Arieh_UAT_ResidualPageTest -->
+        </test-method> <!-- preBase -->
+        <test-method signature="testWithAddDispaptch()[pri:0, instance:com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest@7331196b]" started-at="2024-12-04T16:33:29 IST" name="testWithAddDispaptch" finished-at="2024-12-04T16:33:29 IST" depends-on-methods="com.arieh.tests.Arieh_UAT_AddStockPageTest.testAddStockCode" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: otp (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: otp (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.utils.WaitUtilities.waitForPresence(WaitUtilities.java:42)
+at com.pages.Arieh_UAT_LoginPage.enterOtp(Arieh_UAT_LoginPage.java:97)
+at com.pages.Arieh_UAT_LoginPage.loginToSupplierDashBoard(Arieh_UAT_LoginPage.java:122)
+at com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest.preBase(Arieh_UAT_SupplierAddDispatchPageTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#otp"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c53da3d078ad61d43ab9e529ad3fcb05, findElement {using=id, value=otp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60722/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c53da3d078ad61d43ab9e529ad3fcb05
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithAddDispaptch -->
+        <test-method is-config="true" signature="closeTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest@7331196b]" started-at="2024-12-04T16:33:29 IST" name="closeTest" finished-at="2024-12-04T16:33:29 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+      </class> <!-- com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_AddStockPageTest">
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:32:36 IST" name="preBase" finished-at="2024-12-04T16:32:46 IST" duration-ms="9788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testAddStock3()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:32:46 IST" name="testAddStock3" finished-at="2024-12-04T16:32:48 IST" duration-ms="1228" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-ng-c617464978="" type="button" id="bt_next" data-bs-toggle="modal" data-bs-target="#AddStockModal" class="button-submit button-right">...</button> is not clickable at point (1437, 170). Other element would receive the click: <input _ngcontent-ng-c617464978="" formcontrolname="txt_sd" name="txt_sd" id="txt_sd" type="date" maxlength="50" min="1950-01-01" class="input-text ng-untouched ng-pristine ng-invalid" max="2024-12-04">
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c7e21c2672228c4d14754e79d9b348d, clickElement {id=f.250540B86C12CCE08D79A996CDF79A6A.d.D587C64BA163C2E0E173E372DAA1E839.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60615}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60615/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0c7e21c2672228c4d14754e79d9b348d)] -> id: bt_next]
+Session ID: 0c7e21c2672228c4d14754e79d9b348d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ng-c617464978="" type="button" id="bt_next" data-bs-toggle="modal" data-bs-target="#AddStockModal" class="button-submit button-right">...</button> is not clickable at point (1437, 170). Other element would receive the click: <input _ngcontent-ng-c617464978="" formcontrolname="txt_sd" name="txt_sd" id="txt_sd" type="date" maxlength="50" min="1950-01-01" class="input-text ng-untouched ng-pristine ng-invalid" max="2024-12-04">
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c7e21c2672228c4d14754e79d9b348d, clickElement {id=f.250540B86C12CCE08D79A996CDF79A6A.d.D587C64BA163C2E0E173E372DAA1E839.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60615}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60615/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0c7e21c2672228c4d14754e79d9b348d)] -> id: bt_next]
+Session ID: 0c7e21c2672228c4d14754e79d9b348d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.pages.Arieh_UAT_AddStockPage.clickOnAddStock1(Arieh_UAT_AddStockPage.java:180)
+at com.pages.Arieh_UAT_AddStockPage.AddStockAndSubmitThree(Arieh_UAT_AddStockPage.java:203)
+at com.arieh.tests.Arieh_UAT_AddStockPageTest.testAddStock3(Arieh_UAT_AddStockPageTest.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddStock3 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:32:48 IST" name="tearDownTest" finished-at="2024-12-04T16:32:48 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:32:48 IST" name="preBase" finished-at="2024-12-04T16:32:57 IST" duration-ms="9194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testAddStock4()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:32:57 IST" name="testAddStock4" finished-at="2024-12-04T16:32:58 IST" duration-ms="1110" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-ng-c617464978="" type="button" id="bt_next" data-bs-toggle="modal" data-bs-target="#AddStockModal" class="button-submit button-right">...</button> is not clickable at point (1437, 170). Other element would receive the click: <input _ngcontent-ng-c617464978="" formcontrolname="txt_sd" name="txt_sd" id="txt_sd" type="date" maxlength="50" min="1950-01-01" class="input-text ng-untouched ng-pristine ng-invalid" max="2024-12-04">
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af7bbb78da14b7b908d7609d2f12e715, clickElement {id=f.46E4A1EC11A1B1F82F344E64A8C2CF23.d.7CB6BE21515659067CE6BA2C43AB798B.e.85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60651/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (af7bbb78da14b7b908d7609d2f12e715)] -> id: bt_next]
+Session ID: af7bbb78da14b7b908d7609d2f12e715]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ng-c617464978="" type="button" id="bt_next" data-bs-toggle="modal" data-bs-target="#AddStockModal" class="button-submit button-right">...</button> is not clickable at point (1437, 170). Other element would receive the click: <input _ngcontent-ng-c617464978="" formcontrolname="txt_sd" name="txt_sd" id="txt_sd" type="date" maxlength="50" min="1950-01-01" class="input-text ng-untouched ng-pristine ng-invalid" max="2024-12-04">
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af7bbb78da14b7b908d7609d2f12e715, clickElement {id=f.46E4A1EC11A1B1F82F344E64A8C2CF23.d.7CB6BE21515659067CE6BA2C43AB798B.e.85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60651/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (af7bbb78da14b7b908d7609d2f12e715)] -> id: bt_next]
+Session ID: af7bbb78da14b7b908d7609d2f12e715
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.pages.Arieh_UAT_AddStockPage.clickOnAddStock1(Arieh_UAT_AddStockPage.java:180)
+at com.pages.Arieh_UAT_AddStockPage.AddStockAndSubmitFour(Arieh_UAT_AddStockPage.java:212)
+at com.arieh.tests.Arieh_UAT_AddStockPageTest.testAddStock4(Arieh_UAT_AddStockPageTest.java:127)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddStock4 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:32:58 IST" name="tearDownTest" finished-at="2024-12-04T16:32:58 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:32:58 IST" name="preBase" finished-at="2024-12-04T16:33:08 IST" duration-ms="9654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testAddStockCode()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:08 IST" name="testAddStockCode" finished-at="2024-12-04T16:33:11 IST" duration-ms="3138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddStockCode -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:11 IST" name="tearDownTest" finished-at="2024-12-04T16:33:11 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:29 IST" name="preBase" finished-at="2024-12-04T16:33:38 IST" duration-ms="9509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testBalanceForNewStock()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:38 IST" name="testBalanceForNewStock" finished-at="2024-12-04T16:33:40 IST" duration-ms="2302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBalanceForNewStock -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:40 IST" name="tearDownTest" finished-at="2024-12-04T16:33:41 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:41 IST" name="preBase" finished-at="2024-12-04T16:33:51 IST" duration-ms="10342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testOpeningForNewStock()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:51 IST" name="testOpeningForNewStock" finished-at="2024-12-04T16:33:52 IST" duration-ms="1055" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-ng-c617464978="" type="button" id="bt_next" data-bs-toggle="modal" data-bs-target="#AddStockModal" class="button-submit button-right">...</button> is not clickable at point (1437, 170). Other element would receive the click: <input _ngcontent-ng-c617464978="" formcontrolname="txt_sd" name="txt_sd" id="txt_sd" type="date" maxlength="50" min="1950-01-01" class="input-text ng-untouched ng-pristine ng-invalid" max="2024-12-04">
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fba6d289fa3b64b80665518098b2db52, clickElement {id=f.E125FA9C723042998F67B8AC6DCF8E31.d.54F2E1376E8E10A0041678448BEB1C07.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60792/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fba6d289fa3b64b80665518098b2db52)] -> id: bt_next]
+Session ID: fba6d289fa3b64b80665518098b2db52]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ng-c617464978="" type="button" id="bt_next" data-bs-toggle="modal" data-bs-target="#AddStockModal" class="button-submit button-right">...</button> is not clickable at point (1437, 170). Other element would receive the click: <input _ngcontent-ng-c617464978="" formcontrolname="txt_sd" name="txt_sd" id="txt_sd" type="date" maxlength="50" min="1950-01-01" class="input-text ng-untouched ng-pristine ng-invalid" max="2024-12-04">
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fba6d289fa3b64b80665518098b2db52, clickElement {id=f.E125FA9C723042998F67B8AC6DCF8E31.d.54F2E1376E8E10A0041678448BEB1C07.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\avisu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60792/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fba6d289fa3b64b80665518098b2db52)] -> id: bt_next]
+Session ID: fba6d289fa3b64b80665518098b2db52
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.pages.Arieh_UAT_AddStockPage.clickOnAddStock1(Arieh_UAT_AddStockPage.java:180)
+at com.pages.Arieh_UAT_AddStockPage.AddStockAndSubmitTwo(Arieh_UAT_AddStockPage.java:194)
+at com.arieh.tests.Arieh_UAT_AddStockPageTest.testOpeningForNewStock(Arieh_UAT_AddStockPageTest.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpeningForNewStock -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:52 IST" name="tearDownTest" finished-at="2024-12-04T16:33:52 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="preBase()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:33:52 IST" name="preBase" finished-at="2024-12-04T16:34:01 IST" duration-ms="9358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preBase -->
+        <test-method signature="testWithSecondRow()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:34:01 IST" name="testWithSecondRow" finished-at="2024-12-04T16:34:02 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithSecondRow -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.arieh.tests.Arieh_UAT_AddStockPageTest@6dab9b6d]" started-at="2024-12-04T16:34:02 IST" name="tearDownTest" finished-at="2024-12-04T16:34:02 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.arieh.tests.Arieh_UAT_AddStockPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

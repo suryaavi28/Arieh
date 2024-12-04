@@ -32,8 +32,8 @@ public class Arieh_UAT_LoginPage {
 	private By supplierclick= By.xpath("//div[contains(text(),'Supplier')]");
 	private By emailmob = By.xpath("//input[@placeholder='Enter your Email/Mobile Number']");
 	private By loginbtn = By.xpath("//button[contains(text(),'Send OTP')]");
-	private By otpent= By.id("submitOTP");
-	
+	private By otpent= By.id("otp");
+	private By logintosupplier = By.xpath("//button[contains(text(),'Login')]");
 	
 	public void enterUserName(String un) {
 		WebElement enterun = waitUtils.waitForVisibility(driver, username, 10);
@@ -87,20 +87,40 @@ public class Arieh_UAT_LoginPage {
 		
 	}
 	
-	public void enterOtp(String otp) throws SQLException, InterruptedException {
+	public void clickOnOTP() throws SQLException, InterruptedException {
+		WebElement sendotp = waitUtils.waitForPresence(driver,logintosupplier, 10);
+		sendotp.click();
+		
+	}
+	
+	public void enterOtp() throws SQLException, InterruptedException {
 		WebElement otpenter = waitUtils.waitForPresence(driver, otpent, 10);
 		String otpfetch = ariehuatresidualpage.retrieveOTPFromDatabase();
 		
-		otpenter.sendKeys(otp);
+		otpenter.sendKeys(otpfetch);
 	}
 	
+public void enterIncorrectOtp(String otp) {
+	WebElement otpenter = waitUtils.waitForPresence(driver, otpent, 10);
 	
+	
+	otpenter.sendKeys(otp);
+    }
+	
+	public void verifyWithIncorrectOtp() throws SQLException, InterruptedException {
+		clickOnSupplier();
+		enterEmailID();
+		clickOnSendOtp();
+		enterIncorrectOtp("1234");
+		clickOnOTP();
+	}
 	
 	public Arieh_UAT_SupplierDashboardPage loginToSupplierDashBoard() throws SQLException, InterruptedException {
 		clickOnSupplier();
 		enterEmailID();
 		clickOnSendOtp();
-		enterOtp("");
+		enterOtp();
+		clickOnOTP();
 		return new Arieh_UAT_SupplierDashboardPage (driver);
 		
 	}

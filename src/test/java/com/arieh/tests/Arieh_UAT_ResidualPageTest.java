@@ -11,13 +11,13 @@ import com.pages.Arieh_UAT_ResidualPage;
 public class Arieh_UAT_ResidualPageTest extends TestBase_Arieh {
     Arieh_UAT_ResidualPage residualPage;
 
-   // @BeforeMethod
+    @BeforeMethod
     public void setUpTest() throws MalformedURLException {
         //setUp();
         residualPage = new Arieh_UAT_ResidualPage(driver);
     }
 
- //   @Test
+   @Test
     public void testDeleteStockAndDispatch() throws SQLException, InterruptedException {
     	residualPage = new Arieh_UAT_ResidualPage(driver);
     	residualPage.deleteStockAndDispatch();
@@ -29,7 +29,7 @@ public class Arieh_UAT_ResidualPageTest extends TestBase_Arieh {
     }
     
 
-    //@AfterMethod
+    @AfterMethod
     public void tearDownTest() {
         tearDown();
     }

@@ -1,5 +1,7 @@
 package com.arieh.tests;
 
+import java.sql.SQLException;
+
 import org.openqa.selenium.By	;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -23,7 +25,7 @@ public class Arieh_UAT_LoginPageTest extends TestBase_Arieh {
         ariehloginpage = new Arieh_UAT_LoginPage(driver);
     }
 
-    @Test
+   @Test
     public void testValidCredentials() {
         waitUtils = new WaitUtilities();
         ariehloginpage.validCrdentials();
@@ -33,7 +35,7 @@ public class Arieh_UAT_LoginPageTest extends TestBase_Arieh {
     
    
 
-    @Test
+   @Test
     public void testInvalidCredentials() {
         waitUtils = new WaitUtilities();
         ariehloginpage.enterUserName("invalidUsername");
@@ -43,7 +45,7 @@ public class Arieh_UAT_LoginPageTest extends TestBase_Arieh {
         Assert.assertNotNull(errorMessage, "Invalid Username/ Password");
     }
 
-    @Test
+  @Test
     public void testEmptyCredentials() {
         waitUtils = new WaitUtilities();
         ariehloginpage.enterUserName("");
@@ -52,15 +54,15 @@ public class Arieh_UAT_LoginPageTest extends TestBase_Arieh {
         Assert.assertEquals(driver.findElement(By.xpath("//button[contains(text(),'Login')]")).isEnabled()	, false);
     }
 
-    @Test
+   @Test
     public void testEmptyUsername() {
         waitUtils = new WaitUtilities();
         ariehloginpage.enterUserName("");
         ariehloginpage.enterPassWord("OctNov@2024#");
                Assert.assertEquals(driver.findElement(By.xpath("//button[contains(text(),'Login')]")).isEnabled()	, false);
     }
-
-    @Test
+  
+   @Test
     public void testEmptyPassword() {
         waitUtils = new WaitUtilities();
         ariehloginpage.enterUserName("avisurya1");
@@ -70,7 +72,8 @@ public class Arieh_UAT_LoginPageTest extends TestBase_Arieh {
 
    
 
- @Test   
+
+   @Test   
 public void testWithCopyrightName() {
 	String expected="©Arieh";
 	String actual =driver.findElement(By.xpath("//label[contains(text(),' ©Arieh ')]")).getText();
@@ -78,7 +81,7 @@ public void testWithCopyrightName() {
 	Assert.assertEquals(expected, actualTrim);
 
 }
- @Test
+@Test
  public void testWithLoginLabel() {
 	 String expected="Login to Arieh";
 	 String actual = driver.findElement(By.xpath("//label[contains(text(),'Login to Arieh')]")).getText();
@@ -86,7 +89,7 @@ public void testWithCopyrightName() {
  }
    
 
-    @Test
+   @Test
     public void testSpecialCharactersInCredentials() {
         waitUtils = new WaitUtilities();
         ariehloginpage.enterUserName("avisurya1");
@@ -95,12 +98,32 @@ public void testWithCopyrightName() {
         boolean Login = waitUtils.waitForInvisibility(driver, loginsuccessfull, 10);
         Assert.assertEquals(Login, true);
     }
-    @Test
+   @Test
     public void testWithEmailClick() {
     	boolean actual=ariehloginpage.verifyEmailClick();
     	boolean expected= true;
     	Assert.assertEquals(expected, actual);
     }
+    @Test
+   public void testWithSupplierOTP() throws SQLException, InterruptedException {
+    	ariehloginpage.loginToSupplierDashBoard();
+    String actual =	driver.findElement(By.id("Home")).getText();
+    System.out.println(actual);
+    String expected	="Home";
+    Assert.assertEquals(actual, expected);
+    	
+    }
+    @Test
+    public void testWithIncorrectOtp() throws SQLException, InterruptedException {
+    	ariehloginpage.verifyWithIncorrectOtp();
+    	String actual = driver.findElement(By.xpath("//div[@class='toast-text']")).getText();
+    	System.out.println(actual);
+    	String expected="Incorrect OTP please try again";
+    	 Assert.assertEquals(actual, expected);
+    	
+    }
+    
+    
     
     @AfterMethod
     public void tearDownTest() {

@@ -3,19 +3,49 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.arieh.tests.Arieh_UAT_AddDispatchPageTest">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="cleanAllureResults"/>
+          <include name="testWithAddDispatch"/>
+          <include name="preBase"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_AddDispatchPageTest -->
       <class name="com.arieh.tests.Arieh_UAT_LoginPageTest">
         <methods>
-          <include name="testValidCredentials"/>
+          <include name="testWithSupplierOTP"/>
+          <include name="cleanAllureResults"/>
           <include name="preBase"/>
+          <include name="testWithIncorrectOtp"/>
           <include name="tearDownTest"/>
           <include name="testSpecialCharactersInCredentials"/>
         </methods>
       </class> <!-- com.arieh.tests.Arieh_UAT_LoginPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_AddStockPageTest">
+        <methods>
+          <include name="testAddStock3"/>
+          <include name="tearDownTest"/>
+          <include name="testAddStock4"/>
+          <include name="testOpeningForNewStock"/>
+          <include name="testAddStockCode"/>
+          <include name="cleanAllureResults"/>
+          <include name="preBase"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_AddStockPageTest -->
+      <class name="com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest">
+        <methods>
+          <include name="closeTest"/>
+          <include name="testWithAddDispaptch"/>
+          <include name="cleanAllureResults"/>
+          <include name="preBase"/>
+        </methods>
+      </class> <!-- com.arieh.tests.Arieh_UAT_SupplierAddDispatchPageTest -->
       <class name="com.arieh.tests.Arieh_UAT_DispatchPageTest">
         <methods>
           <include name="preBase"/>
           <include name="tearDownTest"/>
           <include name="TestWithAddStockMultiple"/>
+          <include name="cleanAllureResults"/>
         </methods>
       </class> <!-- com.arieh.tests.Arieh_UAT_DispatchPageTest -->
     </classes>

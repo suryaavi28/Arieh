@@ -26,7 +26,7 @@ public class Arieh_UAT_MulitpleAddStockPageTest extends TestBase_Arieh {
 		ariehuatmultipleaddstockpage=ariehuatdispatchpage.clickOnTheAddStocks();
 	}
 	
-	//@Test(invocationCount = 1)
+	@Test(invocationCount = 1)
 	public void testWithAddMulitpleStock() throws InterruptedException {
 		ariehuatmultipleaddstockpage.enterMultipleStock();
 	}

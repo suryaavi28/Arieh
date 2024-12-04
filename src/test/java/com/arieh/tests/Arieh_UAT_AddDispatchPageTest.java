@@ -12,6 +12,12 @@ import com.pages.Arieh_UAT_DashboardPage;
 import com.pages.Arieh_UAT_DispatchPage;
 import com.pages.Arieh_UAT_LoginPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Link;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class Arieh_UAT_AddDispatchPageTest extends TestBase_Arieh {
 	Arieh_UAT_LoginPage ariehuatloginpage;
 	Arieh_UAT_DashboardPage ariehuatdashboardpage;
@@ -29,8 +35,8 @@ public class Arieh_UAT_AddDispatchPageTest extends TestBase_Arieh {
 	} 
 	
 	
-	@Test(invocationCount = 2)
 	
+	@Test
 	public void testWithAddDispatch() throws InterruptedException {
 		ariehuatadddispatchpage.addDispatchReopen();
 		String actual = driver.findElement(By.xpath("//th[normalize-space()='Action']")).getText();

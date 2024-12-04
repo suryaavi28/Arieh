@@ -1,6 +1,6 @@
-package com.arieh.tests;
+	package com.arieh.tests	;	
 
-import java.io.IOException;
+
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

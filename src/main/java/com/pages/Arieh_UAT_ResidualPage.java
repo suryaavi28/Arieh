@@ -63,7 +63,7 @@ public class Arieh_UAT_ResidualPage {
         String username = "DevSupport";
         String password = "DevSupport@123";
         
-        String query = "select otp from ppg.otp_temp where user_id='bcd@abc.com'";
+        String query = "select otp from ppg.otp_temp where user_id='dsaf@gf.com'";
         
         String otp = "";
         Connection connection = null;
